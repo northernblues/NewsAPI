@@ -2,15 +2,9 @@
 
 A new Flutter project.
 
-## Getting Started
+The remote server API being fetched is from -
+https://newsapi.org/v2/everything?q=nepal&from=2023-02-26&sortBy=publishedAt&apiKey=42037dd664e945e0bdea7e9035dfbe9e
 
-This project is a starting point for a Flutter application.
+Keep note : that it throws error if you provide an incorrect or past date to an API that expects a current or future date, the API may respond with an error message indicating that the date is invalid or out of range. The specific error message may vary depending on the API service you are using.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In that case, change the date in api to match the date it provides services.
